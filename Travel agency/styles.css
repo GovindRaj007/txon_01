@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+html{
+  font-size: calc(15px + 0.390625vw);
+}
+
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+body , html{
+  overflow-x: hidden;
+
+}
+.navbar{
+  position:absolute;
+  top: 10px;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  color: whitesmoke;
+}
+.nav-links{
+  display: flex;
+  align-items: center;
+}
+.nav-links li{
+  margin: 0 30px;
+}
+header{
+  width:100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url('./images/img2.jpg');
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.header-content{
+  position: relative;
+  text-align: center;
+  color: whitesmoke;
+  float: center;
+  width: 100%;
+  margin-right: 350px;
+  margin-bottom: 250px;
+  padding-right: 50px;
+}
+.header-content h2{
+  position: relative;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+
+  font-size: 4vmin;
+}
+
+.header-content h1{
+  position: relative;
+  margin: 10px;
+    margin-top: -0.5em;
+  font-size: 7vmin;
+
+}
+div.note{
+  text-align: center;
+  width: 25%;
+  margin-left: 550px;
+  padding-bottom: 40px;
+  color: whitesmoke;
+
+}
+
+.ctn{
+  position: relative;
+
+  text-align: center;
+  justify-content: center;
+  width: =30px;
+  padding:10px 20px;
+  background: #fc036b;
+  border-radius: 30px;
+  color: inherit;
+  margin-top: 50px;
+
+
+
+}
+.btn{
+  padding:7px 15px;
+  width: =30px;
+  background: #fc036b;
+  border-radius: 30px;
+  color: inherit;
+}
+
+/* mobile device */
+@media only screen and (max-width:850px){
+  .menu-btn{
+    display: block;
+  }
+  .navbar{
+    padding: 0;
+  }
+  .logo{
+    position: absolute;
+    top: 30px;
+    left:30px;
+  }
+  .nav-links{
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: inherit;
+    margin-top: -900px;
+    transition: all 0.5s ease;
+    }
+    .mobile-menu{
+      margin-top: 0px;
+      border-bottom-right-radius: 30%;
+
+    }
+  .nav-links li{
+    margin:30px auto;
+  }
+  }
